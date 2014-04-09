@@ -10,7 +10,6 @@
 
 @interface FBCDViewController : UIViewController
 - (IBAction)start:(id)sender;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btn3;

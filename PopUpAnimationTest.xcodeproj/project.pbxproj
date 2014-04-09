@@ -30,6 +30,7 @@
 		629D49E618F43AA700EBE44A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629D49C818F43AA600EBE44A /* UIKit.framework */; };
 		629D49EE18F43AA700EBE44A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 629D49EC18F43AA700EBE44A /* InfoPlist.strings */; };
 		629D49F018F43AA700EBE44A /* PopUpAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D49EF18F43AA700EBE44A /* PopUpAnimationTestTests.m */; };
+		84DEB26518F4E4B30020505C /* CAAnimation+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DEB26418F4E4B30020505C /* CAAnimation+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		629D49EB18F43AA700EBE44A /* PopUpAnimationTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopUpAnimationTestTests-Info.plist"; sourceTree = "<group>"; };
 		629D49ED18F43AA700EBE44A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		629D49EF18F43AA700EBE44A /* PopUpAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpAnimationTestTests.m; sourceTree = "<group>"; };
+		84DEB26318F4E4B30020505C /* CAAnimation+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Addition.h"; sourceTree = "<group>"; };
+		84DEB26418F4E4B30020505C /* CAAnimation+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				629D49DA18F43AA600EBE44A /* FBCDViewController.m */,
 				629D49DC18F43AA600EBE44A /* Images.xcassets */,
 				629D49CB18F43AA600EBE44A /* Supporting Files */,
+				84DEB26318F4E4B30020505C /* CAAnimation+Addition.h */,
+				84DEB26418F4E4B30020505C /* CAAnimation+Addition.m */,
 			);
 			path = PopUpAnimationTest;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DEB26518F4E4B30020505C /* CAAnimation+Addition.m in Sources */,
 				629D49D118F43AA600EBE44A /* main.m in Sources */,
 				629D49DB18F43AA600EBE44A /* FBCDViewController.m in Sources */,
 				629D49D518F43AA600EBE44A /* FBCDAppDelegate.m in Sources */,
@@ -421,10 +427,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopUpAnimationTest/PopUpAnimationTest-Prefix.pch";
 				INFOPLIST_FILE = "PopUpAnimationTest/PopUpAnimationTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,10 +444,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PopUpAnimationTest/PopUpAnimationTest-Prefix.pch";
 				INFOPLIST_FILE = "PopUpAnimationTest/PopUpAnimationTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
